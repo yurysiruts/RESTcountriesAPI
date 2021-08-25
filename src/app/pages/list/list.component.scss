@@ -1,0 +1,26 @@
+.list-group-item {
+  display: flex;
+  justify-content: left;
+  width: 20em;
+  margin: 0;
+  padding: 0.5em;
+  cursor: pointer;
+
+  img {
+    width: 40px;
+  }
+  p {
+    // display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .col.col-sm-10 {
+    display: flex;
+    justify-content: center;
+  } 
+
+  &:hover {
+    background-color: whitesmoke;
+  }
+}

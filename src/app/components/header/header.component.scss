@@ -1,0 +1,53 @@
+.header {
+  height: 55px;
+  padding: 0;
+  display:flex;
+  justify-content: space-between;
+
+  &_back {
+    font-size: 1.1em;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 55px 0 25px;
+  }
+
+  &_back:hover {
+    background: linear-gradient(to right, #e6e6e6 0%, transparent);
+  }
+
+  &_logo {
+      font-size: 1.1em;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 0 50px;
+  }
+
+  &_logo:hover {
+    background: radial-gradient(#f1f1f1 0%, #fff )
+  }
+
+  &_info {
+      font-size: 1.1em;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 0 25px 0 55px;
+  }
+
+  &_info:hover {
+    background: linear-gradient(to left, #e6e6e6 0%, transparent);
+  }
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #000;
+}
