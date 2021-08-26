@@ -8,10 +8,10 @@
         (click)="navigate([item.link])"
         [coordinates]="item.coordinates"
       > -->
-      <area shape="rect" coords="25,25,330,480" routerLink="/america" alt="alttext">
-      <area shape="rect" coords="365,160,550,420" routerLink="/africa" alt="alttext">
-      <area shape="rect" coords="570,25,850,280" routerLink="/asia" alt="alttext">
-      <area shape="rect" coords="730,285,930,450" routerLink="/ocania" alt="alttext">
-      <area shape="rect" coords="380,25,525,140" routerLink="/europe" alt="alttext">
+      <area shape="rect" coords="25,25,330,480" [routerLink]="['america']" alt="alttext">
+      <area shape="rect" coords="365,160,550,420" [routerLink]="['africa']" alt="alttext">
+      <area shape="rect" coords="570,25,850,280" [routerLink]="['asia']" alt="alttext">
+      <area shape="rect" coords="730,285,930,450" [routerLink]="['oceania']" alt="alttext">
+      <area shape="rect" coords="380,25,525,140" [routerLink]="['europa']" alt="alttext">
   </map>
 </div>

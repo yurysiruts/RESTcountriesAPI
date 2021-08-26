@@ -1,22 +1,22 @@
-import { Component, Type, OnDestroy, AfterViewInit } from '@angular/core'
+// import { Component, Type, OnDestroy, AfterViewInit } from '@angular/core'
 
-@Component({
-  selector: 'app-dialog',
-  templateUrl: './dialog.component.html',
-  styleUrls: ['./dialog.component.css'],
-})
-export class DialogComponent implements AfterViewInit, OnDestroy {
-  childComponentType: Type<any>
+// @Component({
+//   selector: 'app-dialog',
+//   templateUrl: './dialog.component.html',
+//   styleUrls: ['./dialog.component.css'],
+// })
+// export class DialogComponent implements AfterViewInit, OnDestroy {
+//   childComponentType: Type<any>
 
-  ngAfterViewInit() {}
+//   ngAfterViewInit() {}
 
-  ngOnDestroy() {}
+//   ngOnDestroy() {}
 
-  onOverlayClicked(evt: MouseEvent) {
-    // close the dialog
-  }
+//   onOverlayClicked(evt: MouseEvent) {
+//     // close the dialog
+//   }
 
-  onDialogClicked(evt: MouseEvent) {
-    evt.stopPropagation()
-  }
-}
+//   onDialogClicked(evt: MouseEvent) {
+//     evt.stopPropagation()
+//   }
+// }

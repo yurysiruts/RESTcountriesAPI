@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { HTTPService } from './core/http.service';
 
@@ -14,6 +15,6 @@ export class AppComponent implements OnInit {
   constructor(private api: HTTPService) {}
 
   ngOnInit() {
-    // this.api.getCountryList().subscribe((res)=>{console.log(res)})
+    this.api.getCountryList().subscribe((res)=>{console.log(res)});
   }
 }

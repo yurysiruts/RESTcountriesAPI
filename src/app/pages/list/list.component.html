@@ -2,28 +2,12 @@
   <div class="row justify-content-md-center">
     <h5 style="margin-top: 10px;">Państwa tego regionu:</h5>
   </div>
-  <!-- <div class="row justify-content-md-center">
-    <ul class="list-group">
-      <li 
-        class="list-group-item" 
-        *ngFor="let country of countries; let i = index" 
-        [countryItem]="country">
-          <div  class="col col-sm-2">
-            <img src="{{ country.src }}" alt="flag">
-          </div>
-          <div class="col col-sm-10">
-            <p>{{ country.name }}</p>
-          </div>
-      </li>
-    </ul>
-  </div>
-  <hr> -->
   <div class="row justify-content-md-center">
     <ul class="list-group">
       <li 
         class="list-group-item"
         *ngFor="let country of countries$ | async"
-        [routerLink]="'/' + country.name">
+        [routerLink]="[country.name]">
           <div  class="col col-sm-2">
             <img src="{{ country.flag }}" alt="flag">
           </div>
